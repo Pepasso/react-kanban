@@ -1,0 +1,45 @@
+@font-face {
+  font-family: RobotoRegular;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf) format("ttf");
+}
+
+body {
+  margin: 0;
+  font-family:'Roboto',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navigation {
+  background-color: #0067A3;
+  width: 100vw;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+}
+
+.card-wrapper{
+  flex-direction: row;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #0079BF;
+  width: 100vw;
+  height: calc(100vh - 110px);
+}
+
+/*
+  Мобильная версия
+*/
+
+@media (max-width: 1134px) {
+  .card-wrapper{
+    flex-direction: column;
+    justify-content: start;
+  }
+}

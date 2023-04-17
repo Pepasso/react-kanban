@@ -1,0 +1,109 @@
+.card-block {
+    margin-right: 12px;
+    background-color: #EBECF0;
+    color: #000;
+    border-radius: 10px;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 22vw;
+    min-width: 258px;
+    overflow-y: auto;
+    max-height: calc(100vh - 200px);
+}
+
+.canvas-button {
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #FFFFFF00;
+    border: none;
+    cursor: pointer;
+    color: #5E6C84;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 12px;
+}
+
+.canvas-button:disabled:hover {
+    background-color: #FFFFFF00;
+}
+
+.canvas-button:disabled {
+    cursor: auto;
+}
+
+.post-button {
+    background-color: #0079BF;
+    color: #FFF;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-name-input{
+    box-sizing: border-box;
+    display: none;
+    border: none;
+    width: 100%;
+}
+
+.canvas-button:hover{
+    background-color: #FFF;
+}
+
+.post-button:hover{
+    background-color: #004f7c;
+}
+
+.post-button:disabled{
+    background-color: #BF1200;
+    cursor: auto;
+}
+
+.post-button:disabled:hover{
+    background-color: #BF1200;
+}
+
+/*
+    Кастомизация скроллбара
+*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #CBCBCB;
+}
+
+/*
+    Адаптация под  планшеты
+*/
+
+@media (max-width: 1214px) {
+    .card-block{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+}
+
+/*
+  Мобильная версия
+*/
+
+@media (max-width: 1134px) {
+    .card-block{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
